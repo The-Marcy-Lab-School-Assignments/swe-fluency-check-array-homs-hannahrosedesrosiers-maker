@@ -38,7 +38,7 @@ return nums.filter(num => num % 2 === 0)
 
 // Problem 5
 const getLargestNumber = (numbers) => {
-
+return numbers.sort((a,b)=>b-a)[0]
 };
 
 /* -------------------------------------------------- */
@@ -55,7 +55,6 @@ const sampleUsers = [
 
 // Problem 6
 const printUserNamesAndScores = (users) => {
-
 };
 
 
@@ -67,13 +66,13 @@ const getUserNames = (users) => {
 
 // Problem 8
 const getActiveUsersUnder30 = (users) => {
-
+users.filter(user => user.isActive && user.age < 30)
 };
 
 
 // Problem 9
 const getTotalScore = (users) => {
-
+users.reduce((total, user) => total + (user.score || 0), 0)
 };
 
 // Problem 10
