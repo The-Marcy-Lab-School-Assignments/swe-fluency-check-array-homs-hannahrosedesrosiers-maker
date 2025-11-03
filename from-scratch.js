@@ -15,7 +15,7 @@ words.forEach(word => console.log(word))
 
 // Problem 2
 const getStringLengths = (strings) => {
-
+return strings.map(str => str.length)
 };
 
 // Problem 3
